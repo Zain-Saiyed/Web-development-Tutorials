@@ -1,6 +1,6 @@
 # CSCI5709 Tutorial-2
 
-![React](https://img.shields.io/badge/React-18.2.0-orange) ![Netlify Status](https://api.netlify.com/api/v1/badges/fe716b22-fb86-4621-be3d-78d3f58c7dec/deploy-status)](https://app.netlify.com/sites/zainuddin-5709-tutorial-2/deploys)
+![React](https://img.shields.io/badge/React-18.2.0-orange) [![Netlify Status](https://api.netlify.com/api/v1/badges/fe716b22-fb86-4621-be3d-78d3f58c7dec/deploy-status)](https://app.netlify.com/sites/zainuddin-5709-tutorial-2/deploys)
 
 * *Date Created*: 25 January, 2024
 * *Last Modification Date*: 25 January, 2024
