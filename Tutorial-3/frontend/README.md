@@ -14,8 +14,14 @@ This repository is mirrored on GitHub deployed to Netlify.
 
 ![React](https://img.shields.io/badge/React.js-18.2.0-indigo) ![Material UI](https://img.shields.io/badge/MaterialUI-4.2.+-purple) ![yarn](https://img.shields.io/badge/yarn-pkg-blue) [![Netlify Status](https://api.netlify.com/api/v1/badges/65ccd200-e481-41dc-ad17-262cacc8049f/deploy-status)](https://app.netlify.com/sites/csci-5709-t3-zainuddin-saiyed/deploys)
 
+* [React](https://react.dev/) - The web framework used for building user interfaces
+* [Material UI](https://mui.com/material-ui/) - Open source React component for using comprehensive pre-built components.
+* [Yarn](https://yarnpkg.com/) - Used as package manager that doubles down as project manager.
+
 
 ## Sources Used
+
+If in completing your lab / assignment / project you used any interpretation of someone else's code, then provide a list of where the code was implemented, how it was implemented, why it was implemented, and how it was modified. See the sections below for more details.
 
 
 ### Registration.tsx
