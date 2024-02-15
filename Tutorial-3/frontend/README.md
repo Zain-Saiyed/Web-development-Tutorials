@@ -17,8 +17,6 @@ This repository is mirrored on GitHub deployed to Netlify.
 
 ## Sources Used
 
-If in completing your lab / assignment / project you used any interpretation of someone else's code, then provide a list of where the code was implemented, how it was implemented, why it was implemented, and how it was modified. See the sections below for more details.
-
 
 ### Registration.tsx
 
