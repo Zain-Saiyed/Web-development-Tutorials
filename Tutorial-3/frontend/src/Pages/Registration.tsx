@@ -32,7 +32,7 @@ const Registration = () => {
   // !INSPIRATION: https://pandaquests.medium.com/5-easy-ways-to-check-if-a-string-contains-only-numbers-in-javascript-305db38625e8#:~:text=const%20isNumber%20%3D%20str%20%3D%3E%20!,a%20string%20only%20contains%20numbers.
   const check_if_contain_numbers = (str: string) => /^(([A-Za-z])+(\s)*)+$/.test(str);
 
-  const check_if_email_is_valid  = (str: string) => /^([A-Za-z\._]+)@([A-Za-z]+)\.([A-Za-z]+)$/.test(str);
+  const check_if_email_is_valid  = (str: string) => /^([A-Za-z._]+)@([A-Za-z]+)\.([A-Za-z]+)$/.test(str);
 
 
   const submit_form_details = () => {

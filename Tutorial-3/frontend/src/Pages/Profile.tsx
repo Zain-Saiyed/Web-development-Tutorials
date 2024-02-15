@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { Paper, Typography, TextField, Button, Box } from '@material-ui/core';
+import { Paper, Typography, Box } from '@material-ui/core';
 
 const Profile = () => {
   const state_location = useLocation();
