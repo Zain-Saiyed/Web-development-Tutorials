@@ -1,46 +1,48 @@
-# Getting Started with Create React App
+# CSCI5709 Tutorial-3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* *Date Created*: 13 February, 2024
+* *Last Modification Date*: 15 February, 2024
+* **Netlify Site URL (Deployed)**: https://zainuddin-5709-tutorial-3.netlify.app/
+* *Tutorial #3 Frontend code URL*: https://git.cs.dal.ca/zsaiyed/csci-5709-tutorials/-/tree/main/Tutorial-3/frontend?ref_type=heads
 
-## Available Scripts
+ 
+ ## Deployment
+ 
+This repository is mirrored on GitHub deployed to Netlify.
 
-In the project directory, you can run:
+## Built With
 
-### `yarn start`
+![React](https://img.shields.io/badge/React.js-18.2.0-indigo) ![Material UI](https://img.shields.io/badge/MaterialUI-4.2.+-purple) ![yarn](https://img.shields.io/badge/yarn-pkg-blue) [![Netlify Status](https://api.netlify.com/api/v1/badges/65ccd200-e481-41dc-ad17-262cacc8049f/deploy-status)](https://app.netlify.com/sites/csci-5709-t3-zainuddin-saiyed/deploys)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Sources Used
 
-### `yarn test`
+If in completing your lab / assignment / project you used any interpretation of someone else's code, then provide a list of where the code was implemented, how it was implemented, why it was implemented, and how it was modified. See the sections below for more details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### Registration.tsx
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*Lines 33 - 35*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```javascript
+const check_if_contain_numbers = (str: string) => /^(([A-Za-z])+(\s)*)+$/.test(str);
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+const check_if_email_is_valid  = (str: string) => /^([A-Za-z\._]+)@([A-Za-z]+)\.([A-Za-z]+)$/.test(str);
+```
 
-### `yarn eject`
+The code above was created by adapting the code in [PANDAQUESTS](https://pandaquests.medium.com/5-easy-ways-to-check-if-a-string-contains-only-numbers-in-javascript-305db38625e8#:~:text=const%20isNumber%20%3D%20str%20%3D%3E%20!,a%20string%20only%20contains%20numbers.) as shown below: 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```javascript
+const onlyContainsNumbers = (str) => /^\d+$/.test(str);
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The code in [PANDAQUESTS](https://pandaquests.medium.com/5-easy-ways-to-check-if-a-string-contains-only-numbers-in-javascript-305db38625e8#:~:text=const%20isNumber%20%3D%20str%20%3D%3E%20!,a%20string%20only%20contains%20numbers.) was implemented by panda quest to show the different ways to perform check if a string contains number. This was the first method and was flexible because of its regex implementation.
+- [PANDAQUESTS](https://pandaquests.medium.com/5-easy-ways-to-check-if-a-string-contains-only-numbers-in-javascript-305db38625e8#:~:text=const%20isNumber%20%3D%20str%20%3D%3E%20!,a%20string%20only%20contains%20numbers.)'s Code was used as inspiration because I was not aware on how checking regex in string is possible in javascript. And, using a for loop instead is not a good design approach for checking presence of numebrs in string. Hence, the inspiration was taken fomr teh source.
+- [PANDAQUESTS](https://pandaquests.medium.com/5-easy-ways-to-check-if-a-string-contains-only-numbers-in-javascript-305db38625e8#:~:text=const%20isNumber%20%3D%20str%20%3D%3E%20!,a%20string%20only%20contains%20numbers.)'s Code was modified by first validating a regex for some sample examples of names and email IDs using [RegExr](https://regexr.com/), and then using these created regex for checking the validation conditions for First Name, Last Name, and Email ID fields.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author
+ 
+* [Zainuddin Saiyed](zainuddin.s@dal.ca) - *(Owner)*
+ 
+ ---
