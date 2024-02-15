@@ -2,8 +2,9 @@
 
 * *Date Created*: 13 February, 2024
 * *Last Modification Date*: 15 February, 2024
-* **Netlify Site URL (Deployed)**: https://csci-5709-t3-zainuddin-saiyed.netlify.app/
-* *Tutorial #3 Frontend code URL*:  
+* **Netlify Site URL (Deployed)**: https://zainuddin-5709-tutorial-3.netlify.app/
+* *Tutorial #3 Frontend code URL*: https://git.cs.dal.ca/zsaiyed/csci-5709-tutorials/-/tree/main/Tutorial-3/frontend?ref_type=heads
+
  
  ## Deployment
  
