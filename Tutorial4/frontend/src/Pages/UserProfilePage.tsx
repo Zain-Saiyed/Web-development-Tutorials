@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Typography, Paper, Divider } from '@material-ui/core';
@@ -9,10 +9,11 @@ const UserProfilePage = () => {
   const [profile_details, set_profile_details] = useState<any>(null);
 
   // function to get user detail by its ID by calling the API 
-  const getUserByID = async () => {
+  // Fixed: The 'getUserByID' function makes the dependencies of useEffect Hook (at line 20) change on every render. Move it inside the useEffect callback. Alternatively, wrap the definition of 'getUserByID' in its own useCallback() Hook  react-hooks/exhaustive-deps
+  const getUserByID = useCallback(async () => {
     const response = await axios.get(`https://express-t4.onrender.com/api/users/${profile_user_id}`);
     set_profile_details(response.data);
-  };
+  }, [profile_user_id]);
 
   // Upon page page load call the API 
   useEffect(() => {

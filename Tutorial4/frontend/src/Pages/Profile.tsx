@@ -99,7 +99,7 @@ const Profile = () => {
                 ) : (
                   // Got the unicode for gray ball from: https://stackoverflow.com/questions/71565351/what-is-the-unicode-code-for-a-grey-ball
                   <Typography style={{ display:'inline-block', fontWeight:'bold', color: 'black', marginLeft:'10px' }}>⚫ Inactive</Typography>
-                  )}
+                )}
                 <Typography></Typography>
 
                 {/* Display Email ID */}

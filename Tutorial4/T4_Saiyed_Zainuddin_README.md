@@ -44,8 +44,8 @@ For inspiration of the unicode:
 
 ### Profile.tsx and UserProfilePage.tsx
 
-* **Profile.tsx** : *Lines 94 - 100*
-* **UserProfilePage.tsx** : *Lines 30 - 36*
+* **Profile.tsx** : *Lines 96 - 102*
+* **UserProfilePage.tsx** : *Lines 31 - 37*
 
 ```javascript
 {/* Display active status */}
