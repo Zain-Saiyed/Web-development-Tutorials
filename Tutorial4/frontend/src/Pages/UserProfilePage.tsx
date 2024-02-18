@@ -17,7 +17,7 @@ const UserProfilePage = () => {
   // Upon page page load call the API 
   useEffect(() => {
     getUserByID();
-  }, [profile_user_id]);
+  }, [profile_user_id, getUserByID]);
 
   return (
     <>
@@ -38,7 +38,7 @@ const UserProfilePage = () => {
           {/* Display all the user attribute details */}
           <Paper elevation={3} style={{ padding: 20, width: '80%', maxWidth: '55%', margin: 'auto', marginTop: '2%' }}>
             {/* Display image */}
-            <img src={profile_details.picture} style={{ width: '20%' }} />
+            <img src={profile_details.picture} style={{ width: '20%' }} alt={profile_details.name}/>
             
             {/* Display email ID */}
             <Typography style={{margin:'5px'}}></Typography>

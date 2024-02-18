@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Paper, Typography, Box, TextField } from '@material-ui/core';
 import axios from 'axios';
@@ -24,19 +24,10 @@ const Profile = () => {
       // console.log(error);
     }
   };
-
-  // This is for on page load from fresh 
-  useEffect(() => {
-    getAllUserProfiles();
-  }, []);
-
-  // This is for when user searches a name then update the page
-  useEffect(() => {
-    search_profiles();
-  }, [search_first_or_last_name]);
   
-  // Function to filter profiles based on name attribute
-  const search_profiles = () => {
+  // Function to filter profiles based on name attribute 
+  // FIXED: The 'search_profiles' function makes the dependencies of useEffect Hook (at line 52) change on every render. To fix this, wrap the definition of 'search_profiles' in its own useCallback() Hook  react-hooks/exhaustive-deps
+  const search_profiles = useCallback(() => {
     const searched_profiles = [];
     for (let i = 0; i < profile_list.length; i++) {
       const a_user_profile:any = profile_list[i];
@@ -49,7 +40,18 @@ const Profile = () => {
     }
     // console.log(searched_profiles.length)
     set_searched_profiles(searched_profiles);
-  }
+  }, [profile_list, search_first_or_last_name]);
+
+  // This is for on page load from fresh 
+  useEffect(() => {
+    getAllUserProfiles();
+  }, []);
+
+  // This is for when user searches a name then update the page
+  useEffect(() => {
+    search_profiles();
+  }, [search_first_or_last_name, search_profiles]);
+  
 
   // If state variable from login page is not present, then login to access the profile page informaation
   if (!state) {
