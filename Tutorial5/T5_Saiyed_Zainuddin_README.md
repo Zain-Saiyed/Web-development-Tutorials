@@ -3,7 +3,7 @@
 * *Date Created*: 10 March, 2024
 * *Last Modification Date*: 12 March, 2024
 * **Backend Site URL (Deployed)**: https://web-development-tutorials.onrender.com
-* *Tutorial #5 Backend code URL*: https://git.cs.dal.ca/zsaiyed/csci-5709-tutorials/-/tree/main/Tutorial5/frontend?ref_type=heads
+* *Tutorial #5 Backend code URL*: https://git.cs.dal.ca/zsaiyed/csci-5709-tutorials/-/tree/main/Tutorial5
 
 ## Deployment
  
