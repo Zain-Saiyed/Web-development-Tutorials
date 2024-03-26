@@ -1,9 +1,9 @@
-# CSCI5709 Tutorial-6
+# CSCI5709 Tutorial-7
 
-* *Date Created*: 18 March, 2024
-* *Last Modification Date*: 19 March, 2024
+* *Date Created*: 26 March, 2024
+* *Last Modification Date*: 26 March, 2024
 * *Tutorial #6 Backend code URL*: https://git.cs.dal.ca/zsaiyed/csci-5709-tutorials/-/tree/main/Tutorial7
-* API Deployment URL: 
+* API Deployment URL: https://web-development-tutorials-7.onrender.com/users
 
 ## Deployment
  
